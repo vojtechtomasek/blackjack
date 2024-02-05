@@ -1,7 +1,7 @@
 
 import random
 
-class BlackjackGame:
+class Blackjack:
     
     heart = "\u2665"
     spade = "\u2660"
@@ -103,12 +103,12 @@ class BlackjackGame:
     def format_cards(cards):
         result = ""
         for card in cards:
-            suit = BlackjackGame.suits[card["suit"]]
+            suit = Blackjack.suits[card["suit"]]
             result += f"{card['number']}{suit} "
         
         return result.strip()
 
-game = BlackjackGame()
+game = Blackjack()
 game.start_game()
 
 
