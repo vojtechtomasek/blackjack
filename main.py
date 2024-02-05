@@ -65,7 +65,7 @@ class BlackjackGame:
 
     def dealer_action(self):
         while self.hand_value(self.dealer_hand) < 17:
-            print("Dealer has: ", self.format_cards(self.dealer_hand), self.hand_value(self.dealer_hand))
+            #print("Dealer has: ", self.format_cards(self.dealer_hand), self.hand_value(self.dealer_hand))
             self.dealer_hand.append(self.deal_card())
             print("Dealer hits and has:", self.format_cards(self.dealer_hand), self.hand_value(self.dealer_hand))
 
